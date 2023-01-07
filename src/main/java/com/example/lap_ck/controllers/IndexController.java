@@ -32,7 +32,6 @@ public class IndexController {
     private CongviecService congviecService;
     @Autowired
     private IndexService indexService;
-
     @GetMapping
     public String index(ModelMap modelMap) {
         modelMap.addAttribute("sinhviens", sinhvienService.findAll());
